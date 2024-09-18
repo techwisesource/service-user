@@ -21,9 +21,9 @@ module.exports = {
         },
         avatar: {
           type: Sequelize.STRING,
-          allowNull: false,
+          allowNull: true,
         },
-        roles: {
+        role: {
           type: Sequelize.ENUM,
           values: ['admin', 'student'],
           allowNull: false,
