@@ -17,15 +17,13 @@ module.exports = (sequelize, DataTypes) => {
         createdAt: {
             type: DataTypes.DATE,
             field: 'created_at',
-            allowNull: false,
         },
         updatedAt: {
             type: DataTypes.DATE,
-            field: 'created_at',
-            allowNull: false,
+            field: 'updated_at',
         },
     }, {
-        tableName: 'refresh_token',
+        tableName: 'refresh_tokens',
         timestamp: true,
     });
     return RefreshToken;
